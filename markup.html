@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf8">
+    <script src="virtualDom.js" type="application/javascript"></script>
+    <title>virtual Dom 실습</title>
+</head>
+
+<body>
+    <h2>점심 메뉴 추천</h2>
+    <button onclick="document.querySelector('#button1').show()">짜장면</button>
+    <button onclick="document.querySelector('#button2').show()">마라탕</button>
+    <button onclick="document.querySelector('#button3').show()">삼겹살</button>
+    
+
+<custom-modal
+        id="button1"
+        bgColor="#FF80AB">
+    <slot slot="content">점심메뉴 짜장면</slot>
+</custom-modal>
+
+<custom-modal
+        id="button2"
+        bgColor="#F57C00">
+    <slot slot="content">점심메뉴 마라탕</slot>
+</custom-modal>
+
+<custom-modal
+        id="button3"
+        bgColor="#2196F3">
+    <slot slot="content">점심메뉴 삼겹살</slot>
+</custom-modal>
+
+</body>
+</html>
