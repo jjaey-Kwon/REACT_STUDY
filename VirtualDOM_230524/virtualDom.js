@@ -11,7 +11,8 @@
     
             this.attachShadow({mode: "open"});
             this._visible = false;
-    
+            
+            //문자열 리터럴을 사용
             this.shadowRoot.innerHTML = `
                 <div class="modal-wrap">
                     <div class="modal-box">
